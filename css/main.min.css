@@ -1,0 +1,171 @@
+/* CAGOV COLOR SCHEME */
+@import "https://california.azureedge.net/cdt/CAWeb/combined-css/1.0.3/dist/cagov.css";
+
+/* CANNABIS COLOR SCHEME */
+/* @import "https://california.azureedge.net/cdt/CAWeb/combined-css/1.0.3/dist/cannabis.css"; */
+
+/* DROUGHT COLOR SCHEME */
+/* @import "https://california.azureedge.net/cdt/CAWeb/combined-css/1.0.3/dist/drought.css"; */
+
+/* ADD to statewide-footer componment */
+footer ul {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+footer ul li {
+	list-style: none !important;
+	display: inline;
+}
+
+/* Add to statewide-header componment */
+.official-header .official-logo {
+	margin-right: auto;
+}
+header .official-header ul {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+header .official-header ul li {
+	list-style: none !important;
+	display: inline;
+}
+
+header .official-header a {
+	color: black;
+	font-size: 0.875rem;
+	padding-right: 24px;
+}
+cagov-google-translate a {
+	padding-right: 0;
+}
+header .official-header a:hover {
+	text-decoration: none;
+}
+
+/* Add to menu component */
+cagov-navoverlay ul {
+	list-style: none;
+}
+cagov-navoverlay .expanded-menu-col {
+	margin-bottom: 0;
+}
+@media (min-width: 768px) {
+	cagov-navoverlay .expanded-menu-dropdown[aria-hidden="false"] {
+		max-height: none;
+		top: 59px;
+		padding: 0.5rem 1rem 1rem 1rem;
+		border: solid 1px #ccc;
+		box-shadow: 0 4px 4px rgb(0 0 0 / 25%);
+	}
+}
+
+cagov-navoverlay .expanded-menu-section-header-arrow-svg path {
+	fill: var(--primary-color, #004abc);
+}
+
+/* Add to branding componment */
+.branding .with-logo img {
+	max-width: 75px;
+	height: auto;
+}
+
+/* Add/update linkitem in the menu component */
+cagov-navoverlay .expanded-menu-section-header-link {
+	width: auto;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+cagov-navoverlay .expanded-menu-section-header-link a {
+	text-decoration: none;
+}
+cagov-navoverlay .expanded-menu-section-header-link a:hover {
+	text-decoration: underline;
+}
+
+/* Add to agency-footer component */
+section.agency-footer .footer-logo:not(:empty) img {
+	height: auto;
+}
+
+section.agency-footer ul {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+section.agency-footer ul li {
+	list-style: none !important;
+	display: inline;
+}
+/* Generate press agency footer social links customization */
+section.agency-footer .footer-widget-2 {
+	margin-left: auto;
+}
+
+section.agency-footer .footer-widget-2 a .external-link-icon {
+	display: none;
+}
+
+section.agency-footer .footer-widget-2 [class^="icon-"] a {
+	font-size: 0;
+	margin-right: 0;
+	margin-left: 10px;
+	text-decoration: none;
+}
+
+section.agency-footer .footer-widget-2 li a:after {
+	font-family: "CaGov" !important;
+	font-size: 1.125rem;
+}
+
+section.agency-footer .footer-widget-2 .icon-facebook a:after {
+	content: "\e616";
+}
+
+section.agency-footer .footer-widget-2 .icon-twitter a:after {
+	content: "\e619";
+}
+
+section.agency-footer .footer-widget-2 .icon-instagram a:after {
+	content: "\e9dd";
+}
+
+section.agency-footer .footer-widget-2 .icon-youtube a:after {
+	content: "\e618";
+}
+
+section.agency-footer .footer-widget-2 .icon-pinterest a:after {
+	content: "\e61a";
+}
+
+section.agency-footer .footer-widget-2 .icon-snapchat a:after {
+	content: "\e990";
+}
+
+section.agency-footer .footer-widget-2 .icon-linkedin a:after {
+	content: "\e617";
+}
+
+section.agency-footer .footer-widget-2 .icon-email a:after {
+	content: "\e609";
+}
+
+section.agency-footer .footer-widget-2 .icon-share a:after {
+	content: "\e615";
+}
+
+section.agency-footer .footer-widget-2 .icon-vimeo a:after {
+	content: "\e61b";
+}
+
+/* footer mobile*/
+@media (max-width: 991px) {
+	section.agency-footer .footer-widget-1 ul,
+	footer ul {
+		display: flex;
+		flex-flow: column;
+	}
+	section.agency-footer .footer-widget-2 {
+		margin-left: -8px;
+		margin-top: 1rem;
+	}
+}

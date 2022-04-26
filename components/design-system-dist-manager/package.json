@@ -1,0 +1,39 @@
+{
+  "name": "@cagov/design-system-dist-manager",
+  "version": "1.0.0-proposal",
+  "description": "California Design System components for sitewide content, including statewide branding and menus",
+  "main": "index.css",
+  "scripts": {
+    "test": "echo \"No test specified\" && exit 0",
+    "build:js": "rollup --config rollup.config.js",
+    "build": "npm run build:js && sass --no-source-map src/_cannabis.scss build/cannabis.css && sass --no-source-map src/_drought.scss build/drought.css && sass --no-source-map src/_cagov.scss build/cagov.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@cagov/ds-agency-footer": "^1.0.2",
+    "@cagov/ds-back-to-top": "^1.0.2",
+    "@cagov/ds-base-css": "^1.0.11",
+    "@cagov/ds-branding": "^1.0.8",
+    "@cagov/ds-combined-css": "^1.0.1",
+    "@cagov/ds-content-navigation": "^1.0.7",
+    "@cagov/ds-dropdown-menu": "^1.0.15",
+    "@cagov/ds-external-link-icon": "^1.0.3",
+    "@cagov/ds-feedback": "^1.0.11",
+    "@cagov/ds-google-translate": "^1.0.2",
+    "@cagov/ds-pagination": "^1.0.5",
+    "@cagov/ds-pdf-icon": "^1.0.1",
+    "@cagov/ds-skip-to-content": "^1.0.1",
+    "@cagov/ds-statewide-footer": "^1.0.5",
+    "@cagov/ds-statewide-header": "^1.0.11",
+    "@open-wc/testing": "^3.0.0-next.2",
+    "@web/test-runner": "^0.13.16",
+    "@web/test-runner-puppeteer": "^0.10.1",
+    "@wordpress/scripts": "^16.1.5",
+    "rollup": "^2.52.2",
+    "rollup-plugin-import-css": "^2.0.1",
+    "sass": "^1.38.1",
+    "semistandard": "^16.0.0"
+  }
+}
